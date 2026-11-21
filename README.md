@@ -3,6 +3,7 @@
 A monthly hygiene sweep across TLS endpoints and the identity directory, with every finding tied to a field, a value and the threshold it crossed.
 
 <!-- claims: findings=12 cert=8 iam=4 critical=4 -->
+**Operating procedure:** [docs/SOP.md](docs/SOP.md) — how to run it, who approves, and what to do when it fails.
 
 ## What it checks
 
