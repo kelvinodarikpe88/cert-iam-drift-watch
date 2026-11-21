@@ -1,0 +1,82 @@
+{
+  "certs": [
+    {
+      "host": "api.example.com",
+      "port": 443,
+      "not_after": "2026-11-25",
+      "key_alg": "RSA",
+      "key_bits": 2048,
+      "sig_alg": "SHA256-RSA",
+      "issuer": "Example Issuing CA",
+      "subject": "CN=api.example.com",
+      "chain_ok": true,
+      "expected_host": "api.example.com",
+      "sans": ["api.example.com"]
+    },
+    {
+      "host": "legacy.example.com",
+      "port": 443,
+      "not_after": "2026-10-01",
+      "key_alg": "RSA",
+      "key_bits": 1024,
+      "sig_alg": "SHA1-RSA",
+      "issuer": "Legacy CA",
+      "subject": "CN=legacy.example.com",
+      "chain_ok": true,
+      "expected_host": "legacy.example.com",
+      "sans": ["legacy.example.com"]
+    },
+    {
+      "host": "intranet.example.com",
+      "port": 443,
+      "not_after": "2026-12-20",
+      "key_alg": "EC",
+      "key_bits": 256,
+      "sig_alg": "ECDSA-SHA256",
+      "issuer": "Example Issuing CA",
+      "subject": "CN=intranet.example.com",
+      "chain_ok": true,
+      "expected_host": "intranet.example.com",
+      "sans": ["intranet.example.com"]
+    },
+    {
+      "host": "mail.example.com",
+      "port": 443,
+      "not_after": "2027-06-01",
+      "key_alg": "RSA",
+      "key_bits": 2048,
+      "sig_alg": "SHA256-RSA",
+      "issuer": "Example Issuing CA",
+      "subject": "CN=mail.example.com",
+      "chain_ok": false,
+      "expected_host": "mail.example.com",
+      "sans": ["mail.example.com"]
+    },
+    {
+      "host": "vpn.example.com",
+      "port": 443,
+      "not_after": "2027-03-01",
+      "key_alg": "RSA",
+      "key_bits": 2048,
+      "sig_alg": "SHA256-RSA",
+      "issuer": "Example Issuing CA",
+      "subject": "CN=vpn.example.com",
+      "chain_ok": true,
+      "expected_host": "vpn.example.com",
+      "sans": ["vpn2.example.com"]
+    },
+    {
+      "host": "self.example.com",
+      "port": 8443,
+      "not_after": "2027-01-01",
+      "key_alg": "RSA",
+      "key_bits": 2048,
+      "sig_alg": "SHA256-RSA",
+      "issuer": "CN=self.example.com",
+      "subject": "CN=self.example.com",
+      "chain_ok": true,
+      "expected_host": "self.example.com",
+      "sans": ["self.example.com"]
+    }
+  ]
+}

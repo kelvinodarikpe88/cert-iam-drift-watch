@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "principal": "admin@example.com",
+      "roles": ["Global Administrator"],
+      "assignment": "permanent",
+      "mfa_enabled": true,
+      "last_sign_in_days": 2,
+      "enabled": true
+    },
+    {
+      "principal": "svc-backup@example.com",
+      "roles": ["Privileged Role Administrator"],
+      "assignment": "permanent",
+      "mfa_enabled": false,
+      "last_sign_in_days": 120,
+      "enabled": true
+    },
+    {
+      "principal": "contractor_ext_example.com#EXT#@example.com",
+      "roles": ["User Administrator"],
+      "assignment": "permanent",
+      "mfa_enabled": true,
+      "last_sign_in_days": 10,
+      "enabled": true
+    },
+    {
+      "principal": "user@example.com",
+      "roles": ["User"],
+      "assignment": "permanent",
+      "mfa_enabled": false,
+      "last_sign_in_days": 1,
+      "enabled": true
+    },
+    {
+      "principal": "admin2@example.com",
+      "roles": ["Global Administrator"],
+      "assignment": "eligible",
+      "mfa_enabled": true,
+      "last_sign_in_days": 5,
+      "enabled": true
+    }
+  ]
+}
